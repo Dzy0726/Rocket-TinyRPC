@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/provider.dir/UserService.cc.o CMakeFiles/provider.dir/__/user.pb.cc.o  -o ../../../bin/provider   -L/home/ubuntu/Rocket-TinyRPC/lib 
