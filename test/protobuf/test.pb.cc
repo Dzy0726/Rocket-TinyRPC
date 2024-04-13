@@ -14,6 +14,7 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_test_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoginRequest_TestEntry_DoNotUse_test_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_test_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ResponseCode_test_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_test_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_User_test_2eproto;
 namespace fixbug {
@@ -21,6 +22,10 @@ class ResponseCodeDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ResponseCode> _instance;
 } _ResponseCode_default_instance_;
+class LoginRequest_TestEntry_DoNotUseDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LoginRequest_TestEntry_DoNotUse> _instance;
+} _LoginRequest_TestEntry_DoNotUse_default_instance_;
 class LoginRequestDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LoginRequest> _instance;
@@ -83,8 +88,22 @@ static void InitDefaultsscc_info_LoginRequest_test_2eproto() {
   ::fixbug::LoginRequest::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoginRequest_test_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LoginRequest_test_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LoginRequest_test_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LoginRequest_test_2eproto}, {
+      &scc_info_LoginRequest_TestEntry_DoNotUse_test_2eproto.base,}};
+
+static void InitDefaultsscc_info_LoginRequest_TestEntry_DoNotUse_test_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::fixbug::_LoginRequest_TestEntry_DoNotUse_default_instance_;
+    new (ptr) ::fixbug::LoginRequest_TestEntry_DoNotUse();
+  }
+  ::fixbug::LoginRequest_TestEntry_DoNotUse::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoginRequest_TestEntry_DoNotUse_test_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LoginRequest_TestEntry_DoNotUse_test_2eproto}, {}};
 
 static void InitDefaultsscc_info_LoginResponse_test_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -129,9 +148,9 @@ static void InitDefaultsscc_info_User_test_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_User_test_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_User_test_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_test_2eproto[6];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_test_2eproto[7];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_test_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_test_2eproto = nullptr;
+static const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* file_level_service_descriptors_test_2eproto[1];
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_test_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -141,6 +160,15 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_test_2eproto::offsets[] PROTOB
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::fixbug::ResponseCode, errcode_),
   PROTOBUF_FIELD_OFFSET(::fixbug::ResponseCode, errmessage_),
+  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest_TestEntry_DoNotUse, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest_TestEntry_DoNotUse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest_TestEntry_DoNotUse, key_),
+  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest_TestEntry_DoNotUse, value_),
+  0,
+  1,
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -148,6 +176,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_test_2eproto::offsets[] PROTOB
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest, name_),
   PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest, pwd_),
+  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest, test_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::fixbug::LoginResponse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -179,15 +208,17 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_test_2eproto::offsets[] PROTOB
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::fixbug::ResponseCode)},
-  { 7, -1, sizeof(::fixbug::LoginRequest)},
-  { 14, -1, sizeof(::fixbug::LoginResponse)},
-  { 21, -1, sizeof(::fixbug::GetFriendListsRequest)},
-  { 27, -1, sizeof(::fixbug::User)},
-  { 35, -1, sizeof(::fixbug::GetFriendListsResponse)},
+  { 7, 14, sizeof(::fixbug::LoginRequest_TestEntry_DoNotUse)},
+  { 16, -1, sizeof(::fixbug::LoginRequest)},
+  { 24, -1, sizeof(::fixbug::LoginResponse)},
+  { 31, -1, sizeof(::fixbug::GetFriendListsRequest)},
+  { 37, -1, sizeof(::fixbug::User)},
+  { 45, -1, sizeof(::fixbug::GetFriendListsResponse)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_ResponseCode_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_LoginRequest_TestEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_LoginRequest_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_LoginResponse_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_GetFriendListsRequest_default_instance_),
@@ -197,23 +228,30 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_test_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\ntest.proto\022\006fixbug\"3\n\014ResponseCode\022\017\n\007"
-  "errCode\030\001 \001(\005\022\022\n\nerrMessage\030\002 \001(\014\")\n\014Log"
-  "inRequest\022\014\n\004name\030\001 \001(\014\022\013\n\003pwd\030\002 \001(\014\"F\n\r"
-  "LoginResponse\022$\n\006result\030\001 \001(\0132\024.fixbug.R"
-  "esponseCode\022\017\n\007success\030\002 \001(\010\"\'\n\025GetFrien"
-  "dListsRequest\022\016\n\006userID\030\001 \001(\r\"[\n\004User\022\014\n"
-  "\004name\030\001 \001(\014\022\013\n\003age\030\002 \001(\r\022\035\n\003sex\030\003 \001(\0162\020."
-  "fixbug.User.Sex\"\031\n\003Sex\022\007\n\003MAN\020\000\022\t\n\005WOMAN"
-  "\020\001\"a\n\026GetFriendListsResponse\022$\n\006result\030\001"
-  " \001(\0132\024.fixbug.ResponseCode\022!\n\013friend_lis"
-  "t\030\002 \003(\0132\014.fixbug.Userb\006proto3"
+  "errCode\030\001 \001(\005\022\022\n\nerrMessage\030\002 \001(\014\"\204\001\n\014Lo"
+  "ginRequest\022\014\n\004name\030\001 \001(\014\022\013\n\003pwd\030\002 \001(\014\022,\n"
+  "\004test\030\003 \003(\0132\036.fixbug.LoginRequest.TestEn"
+  "try\032+\n\tTestEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002"
+  " \001(\t:\0028\001\"F\n\rLoginResponse\022$\n\006result\030\001 \001("
+  "\0132\024.fixbug.ResponseCode\022\017\n\007success\030\002 \001(\010"
+  "\"\'\n\025GetFriendListsRequest\022\016\n\006userID\030\001 \001("
+  "\r\"[\n\004User\022\014\n\004name\030\001 \001(\014\022\013\n\003age\030\002 \001(\r\022\035\n\003"
+  "sex\030\003 \001(\0162\020.fixbug.User.Sex\"\031\n\003Sex\022\007\n\003MA"
+  "N\020\000\022\t\n\005WOMAN\020\001\"a\n\026GetFriendListsResponse"
+  "\022$\n\006result\030\001 \001(\0132\024.fixbug.ResponseCode\022!"
+  "\n\013friend_list\030\002 \003(\0132\014.fixbug.User2\227\001\n\016Us"
+  "erServiceRpc\0224\n\005Login\022\024.fixbug.LoginRequ"
+  "est\032\025.fixbug.LoginResponse\022O\n\016GetFriendL"
+  "ists\022\035.fixbug.GetFriendListsRequest\032\036.fi"
+  "xbug.GetFriendListsResponseB\003\200\001\001b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_test_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_test_2eproto_sccs[6] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_test_2eproto_sccs[7] = {
   &scc_info_GetFriendListsRequest_test_2eproto.base,
   &scc_info_GetFriendListsResponse_test_2eproto.base,
   &scc_info_LoginRequest_test_2eproto.base,
+  &scc_info_LoginRequest_TestEntry_DoNotUse_test_2eproto.base,
   &scc_info_LoginResponse_test_2eproto.base,
   &scc_info_ResponseCode_test_2eproto.base,
   &scc_info_User_test_2eproto.base,
@@ -221,10 +259,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tes
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_test_2eproto_once;
 static bool descriptor_table_test_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_test_2eproto = {
-  &descriptor_table_test_2eproto_initialized, descriptor_table_protodef_test_2eproto, "test.proto", 429,
-  &descriptor_table_test_2eproto_once, descriptor_table_test_2eproto_sccs, descriptor_table_test_2eproto_deps, 6, 0,
+  &descriptor_table_test_2eproto_initialized, descriptor_table_protodef_test_2eproto, "test.proto", 680,
+  &descriptor_table_test_2eproto_once, descriptor_table_test_2eproto_sccs, descriptor_table_test_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_test_2eproto::offsets,
-  file_level_metadata_test_2eproto, 6, file_level_enum_descriptors_test_2eproto, file_level_service_descriptors_test_2eproto,
+  file_level_metadata_test_2eproto, 7, file_level_enum_descriptors_test_2eproto, file_level_service_descriptors_test_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -475,6 +513,23 @@ void ResponseCode::InternalSwap(ResponseCode* other) {
 
 // ===================================================================
 
+LoginRequest_TestEntry_DoNotUse::LoginRequest_TestEntry_DoNotUse() {}
+LoginRequest_TestEntry_DoNotUse::LoginRequest_TestEntry_DoNotUse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+    : SuperType(arena) {}
+void LoginRequest_TestEntry_DoNotUse::MergeFrom(const LoginRequest_TestEntry_DoNotUse& other) {
+  MergeFromInternal(other);
+}
+::PROTOBUF_NAMESPACE_ID::Metadata LoginRequest_TestEntry_DoNotUse::GetMetadata() const {
+  return GetMetadataStatic();
+}
+void LoginRequest_TestEntry_DoNotUse::MergeFrom(
+    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
+  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
+}
+
+
+// ===================================================================
+
 void LoginRequest::InitAsDefaultInstance() {
 }
 class LoginRequest::_Internal {
@@ -490,6 +545,7 @@ LoginRequest::LoginRequest(const LoginRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  test_.MergeFrom(from.test_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_name().empty()) {
     name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -532,6 +588,7 @@ void LoginRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  test_.Clear();
   name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   pwd_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   _internal_metadata_.Clear();
@@ -558,6 +615,18 @@ const char* LoginRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           auto str = _internal_mutable_pwd();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // map<int32, string> test = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(&test_, ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -598,6 +667,47 @@ failure:
         2, this->_internal_pwd(), target);
   }
 
+  // map<int32, string> test = 3;
+  if (!this->_internal_test().empty()) {
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< ::PROTOBUF_NAMESPACE_ID::int32, std::string >::const_pointer
+        ConstPtr;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::SortItem< ::PROTOBUF_NAMESPACE_ID::int32, ConstPtr > SortItem;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByFirstField<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+          p->second.data(), static_cast<int>(p->second.length()),
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+          "fixbug.LoginRequest.TestEntry.value");
+      }
+    };
+
+    if (stream->IsSerializationDeterministic() &&
+        this->_internal_test().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->_internal_test().size()]);
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< ::PROTOBUF_NAMESPACE_ID::int32, std::string >::size_type size_type;
+      size_type n = 0;
+      for (::PROTOBUF_NAMESPACE_ID::Map< ::PROTOBUF_NAMESPACE_ID::int32, std::string >::const_iterator
+          it = this->_internal_test().begin();
+          it != this->_internal_test().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      for (size_type i = 0; i < n; i++) {
+        target = LoginRequest_TestEntry_DoNotUse::Funcs::InternalSerialize(3, items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second, target, stream);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)].second));
+      }
+    } else {
+      for (::PROTOBUF_NAMESPACE_ID::Map< ::PROTOBUF_NAMESPACE_ID::int32, std::string >::const_iterator
+          it = this->_internal_test().begin();
+          it != this->_internal_test().end(); ++it) {
+        target = LoginRequest_TestEntry_DoNotUse::Funcs::InternalSerialize(3, it->first, it->second, target, stream);
+        Utf8Check::Check(&(*it));
+      }
+    }
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target, stream);
@@ -613,6 +723,15 @@ size_t LoginRequest::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // map<int32, string> test = 3;
+  total_size += 1 *
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_test_size());
+  for (::PROTOBUF_NAMESPACE_ID::Map< ::PROTOBUF_NAMESPACE_ID::int32, std::string >::const_iterator
+      it = this->_internal_test().begin();
+      it != this->_internal_test().end(); ++it) {
+    total_size += LoginRequest_TestEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
+  }
 
   // bytes name = 1;
   if (this->name().size() > 0) {
@@ -659,6 +778,7 @@ void LoginRequest::MergeFrom(const LoginRequest& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  test_.MergeFrom(from.test_);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -690,6 +810,7 @@ bool LoginRequest::IsInitialized() const {
 void LoginRequest::InternalSwap(LoginRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  test_.Swap(&other->test_);
   name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   pwd_.Swap(&other->pwd_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -1604,11 +1725,128 @@ void GetFriendListsResponse::InternalSwap(GetFriendListsResponse* other) {
 }
 
 
+// ===================================================================
+
+UserServiceRpc::~UserServiceRpc() {}
+
+const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* UserServiceRpc::descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_test_2eproto);
+  return file_level_service_descriptors_test_2eproto[0];
+}
+
+const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* UserServiceRpc::GetDescriptor() {
+  return descriptor();
+}
+
+void UserServiceRpc::Login(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+                         const ::fixbug::LoginRequest*,
+                         ::fixbug::LoginResponse*,
+                         ::google::protobuf::Closure* done) {
+  controller->SetFailed("Method Login() not implemented.");
+  done->Run();
+}
+
+void UserServiceRpc::GetFriendLists(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+                         const ::fixbug::GetFriendListsRequest*,
+                         ::fixbug::GetFriendListsResponse*,
+                         ::google::protobuf::Closure* done) {
+  controller->SetFailed("Method GetFriendLists() not implemented.");
+  done->Run();
+}
+
+void UserServiceRpc::CallMethod(const ::PROTOBUF_NAMESPACE_ID::MethodDescriptor* method,
+                             ::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+                             const ::PROTOBUF_NAMESPACE_ID::Message* request,
+                             ::PROTOBUF_NAMESPACE_ID::Message* response,
+                             ::google::protobuf::Closure* done) {
+  GOOGLE_DCHECK_EQ(method->service(), file_level_service_descriptors_test_2eproto[0]);
+  switch(method->index()) {
+    case 0:
+      Login(controller,
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::fixbug::LoginRequest*>(
+                 request),
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::fixbug::LoginResponse*>(
+                 response),
+             done);
+      break;
+    case 1:
+      GetFriendLists(controller,
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::fixbug::GetFriendListsRequest*>(
+                 request),
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::fixbug::GetFriendListsResponse*>(
+                 response),
+             done);
+      break;
+    default:
+      GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
+      break;
+  }
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message& UserServiceRpc::GetRequestPrototype(
+    const ::PROTOBUF_NAMESPACE_ID::MethodDescriptor* method) const {
+  GOOGLE_DCHECK_EQ(method->service(), descriptor());
+  switch(method->index()) {
+    case 0:
+      return ::fixbug::LoginRequest::default_instance();
+    case 1:
+      return ::fixbug::GetFriendListsRequest::default_instance();
+    default:
+      GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
+      return *::PROTOBUF_NAMESPACE_ID::MessageFactory::generated_factory()
+          ->GetPrototype(method->input_type());
+  }
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message& UserServiceRpc::GetResponsePrototype(
+    const ::PROTOBUF_NAMESPACE_ID::MethodDescriptor* method) const {
+  GOOGLE_DCHECK_EQ(method->service(), descriptor());
+  switch(method->index()) {
+    case 0:
+      return ::fixbug::LoginResponse::default_instance();
+    case 1:
+      return ::fixbug::GetFriendListsResponse::default_instance();
+    default:
+      GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
+      return *::PROTOBUF_NAMESPACE_ID::MessageFactory::generated_factory()
+          ->GetPrototype(method->output_type());
+  }
+}
+
+UserServiceRpc_Stub::UserServiceRpc_Stub(::PROTOBUF_NAMESPACE_ID::RpcChannel* channel)
+  : channel_(channel), owns_channel_(false) {}
+UserServiceRpc_Stub::UserServiceRpc_Stub(
+    ::PROTOBUF_NAMESPACE_ID::RpcChannel* channel,
+    ::PROTOBUF_NAMESPACE_ID::Service::ChannelOwnership ownership)
+  : channel_(channel),
+    owns_channel_(ownership == ::PROTOBUF_NAMESPACE_ID::Service::STUB_OWNS_CHANNEL) {}
+UserServiceRpc_Stub::~UserServiceRpc_Stub() {
+  if (owns_channel_) delete channel_;
+}
+
+void UserServiceRpc_Stub::Login(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+                              const ::fixbug::LoginRequest* request,
+                              ::fixbug::LoginResponse* response,
+                              ::google::protobuf::Closure* done) {
+  channel_->CallMethod(descriptor()->method(0),
+                       controller, request, response, done);
+}
+void UserServiceRpc_Stub::GetFriendLists(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+                              const ::fixbug::GetFriendListsRequest* request,
+                              ::fixbug::GetFriendListsResponse* response,
+                              ::google::protobuf::Closure* done) {
+  channel_->CallMethod(descriptor()->method(1),
+                       controller, request, response, done);
+}
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace fixbug
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::fixbug::ResponseCode* Arena::CreateMaybeMessage< ::fixbug::ResponseCode >(Arena* arena) {
   return Arena::CreateInternal< ::fixbug::ResponseCode >(arena);
+}
+template<> PROTOBUF_NOINLINE ::fixbug::LoginRequest_TestEntry_DoNotUse* Arena::CreateMaybeMessage< ::fixbug::LoginRequest_TestEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::fixbug::LoginRequest_TestEntry_DoNotUse >(arena);
 }
 template<> PROTOBUF_NOINLINE ::fixbug::LoginRequest* Arena::CreateMaybeMessage< ::fixbug::LoginRequest >(Arena* arena) {
   return Arena::CreateInternal< ::fixbug::LoginRequest >(arena);
