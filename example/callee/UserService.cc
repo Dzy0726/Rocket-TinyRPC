@@ -51,7 +51,7 @@ int main(int argc, char** argv) {
     RocketApplication::Init(argc, argv);
 
     // 把UserService发布到rpc节点上
-    // provider 是一个网络服务对象
+    // provider 是一个网络服务对象 负责数据序列化反序列化 数据收发
     RpcProvider provider;
     provider.NotifyService(new UserService());
 

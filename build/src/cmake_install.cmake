@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/Rocket-TinyRPC/example/callee
+# Install script for directory: /home/ubuntu/Rocket-TinyRPC/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

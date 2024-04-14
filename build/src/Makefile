@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles /home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/progress.marks
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Rocket
+# Convenience name for target.
+src/CMakeFiles/Rocket.dir/rule:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Rocket.dir/rule
+.PHONY : src/CMakeFiles/Rocket.dir/rule
 
-# Build rule for target.
-Rocket: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Rocket
+# Convenience name for target.
+Rocket: src/CMakeFiles/Rocket.dir/rule
+
 .PHONY : Rocket
 
 # fast build rule for target.
 Rocket/fast:
-	$(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/build
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/build
 .PHONY : Rocket/fast
 
-#=============================================================================
-# Target rules for targets named provider
+RocketApplication.o: RocketApplication.cc.o
 
-# Build rule for target.
-provider: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 provider
-.PHONY : provider
+.PHONY : RocketApplication.o
 
-# fast build rule for target.
-provider/fast:
-	$(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
-.PHONY : provider/fast
+# target to build an object file
+RocketApplication.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketApplication.cc.o
+.PHONY : RocketApplication.cc.o
+
+RocketApplication.i: RocketApplication.cc.i
+
+.PHONY : RocketApplication.i
+
+# target to preprocess a source file
+RocketApplication.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketApplication.cc.i
+.PHONY : RocketApplication.cc.i
+
+RocketApplication.s: RocketApplication.cc.s
+
+.PHONY : RocketApplication.s
+
+# target to generate assembly for a file
+RocketApplication.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketApplication.cc.s
+.PHONY : RocketApplication.cc.s
+
+RpcProvider.o: RpcProvider.cc.o
+
+.PHONY : RpcProvider.o
+
+# target to build an object file
+RpcProvider.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RpcProvider.cc.o
+.PHONY : RpcProvider.cc.o
+
+RpcProvider.i: RpcProvider.cc.i
+
+.PHONY : RpcProvider.i
+
+# target to preprocess a source file
+RpcProvider.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RpcProvider.cc.i
+.PHONY : RpcProvider.cc.i
+
+RpcProvider.s: RpcProvider.cc.s
+
+.PHONY : RpcProvider.s
+
+# target to generate assembly for a file
+RpcProvider.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RpcProvider.cc.s
+.PHONY : RpcProvider.cc.s
 
 # Help Target
 help:
@@ -145,7 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Rocket"
-	@echo "... provider"
+	@echo "... RocketApplication.o"
+	@echo "... RocketApplication.i"
+	@echo "... RocketApplication.s"
+	@echo "... RpcProvider.o"
+	@echo "... RpcProvider.i"
+	@echo "... RpcProvider.s"
 .PHONY : help
 
 
@@ -157,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

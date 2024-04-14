@@ -4,10 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc" "/home/ubuntu/Rocket-TinyRPC/build/example/callee/CMakeFiles/provider.dir/UserService.cc.o"
-  "/home/ubuntu/Rocket-TinyRPC/example/user.pb.cc" "/home/ubuntu/Rocket-TinyRPC/build/example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
+  "/home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketApplication.cc.o"
+  "/home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RpcProvider.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "Rocket_EXPORTS"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -17,7 +22,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

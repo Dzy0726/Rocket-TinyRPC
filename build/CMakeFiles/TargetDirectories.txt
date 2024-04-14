@@ -1,5 +1,8 @@
 /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/edit_cache.dir
+/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir
 /home/ubuntu/Rocket-TinyRPC/build/example/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/Rocket-TinyRPC/build/example/CMakeFiles/edit_cache.dir
 /home/ubuntu/Rocket-TinyRPC/build/example/callee/CMakeFiles/rebuild_cache.dir

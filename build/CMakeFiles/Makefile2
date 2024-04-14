@@ -53,16 +53,19 @@ CMAKE_BINARY_DIR = /home/ubuntu/Rocket-TinyRPC/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: src/all
 all: example/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: src/preinstall
 preinstall: example/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: src/clean
 clean: example/clean
 
 .PHONY : clean
@@ -104,18 +107,63 @@ example/callee/clean: example/callee/CMakeFiles/provider.dir/clean
 .PHONY : example/callee/clean
 
 #=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/Rocket.dir/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/Rocket.dir/clean
+
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/Rocket.dir
+
+# All Build rule for target.
+src/CMakeFiles/Rocket.dir/all:
+	$(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/depend
+	$(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=1,2,3 "Built target Rocket"
+.PHONY : src/CMakeFiles/Rocket.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/Rocket.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Rocket.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/Rocket.dir/rule
+
+# Convenience name for target.
+Rocket: src/CMakeFiles/Rocket.dir/rule
+
+.PHONY : Rocket
+
+# clean rule for target.
+src/CMakeFiles/Rocket.dir/clean:
+	$(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/clean
+.PHONY : src/CMakeFiles/Rocket.dir/clean
+
+#=============================================================================
 # Target rules for target example/callee/CMakeFiles/provider.dir
 
 # All Build rule for target.
-example/callee/CMakeFiles/provider.dir/all:
+example/callee/CMakeFiles/provider.dir/all: src/CMakeFiles/Rocket.dir/all
 	$(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/depend
 	$(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=1,2,3 "Built target provider"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=4,5,6 "Built target provider"
 .PHONY : example/callee/CMakeFiles/provider.dir/all
 
 # Build rule for subdir invocation for target.
 example/callee/CMakeFiles/provider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/provider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 0
 .PHONY : example/callee/CMakeFiles/provider.dir/rule

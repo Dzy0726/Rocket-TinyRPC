@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g  -shared -Wl,-soname,libRocket.so -o ../../lib/libRocket.so CMakeFiles/Rocket.dir/RocketApplication.cc.o CMakeFiles/Rocket.dir/RpcProvider.cc.o   -L/home/ubuntu/Rocket-TinyRPC/lib 

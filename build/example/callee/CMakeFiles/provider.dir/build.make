@@ -60,28 +60,28 @@ include example/callee/CMakeFiles/provider.dir/flags.make
 example/callee/CMakeFiles/provider.dir/UserService.cc.o: example/callee/CMakeFiles/provider.dir/flags.make
 example/callee/CMakeFiles/provider.dir/UserService.cc.o: ../example/callee/UserService.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/callee/CMakeFiles/provider.dir/UserService.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/provider.dir/UserService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/provider.dir/UserService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc
 
 example/callee/CMakeFiles/provider.dir/UserService.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/provider.dir/UserService.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc > CMakeFiles/provider.dir/UserService.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc > CMakeFiles/provider.dir/UserService.cc.i
 
 example/callee/CMakeFiles/provider.dir/UserService.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/provider.dir/UserService.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc -o CMakeFiles/provider.dir/UserService.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc -o CMakeFiles/provider.dir/UserService.cc.s
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: example/callee/CMakeFiles/provider.dir/flags.make
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: ../example/user.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/provider.dir/__/user.pb.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc > CMakeFiles/provider.dir/__/user.pb.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc > CMakeFiles/provider.dir/__/user.pb.cc.i
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/provider.dir/__/user.pb.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc -o CMakeFiles/provider.dir/__/user.pb.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc -o CMakeFiles/provider.dir/__/user.pb.cc.s
 
 # Object files for target provider
 provider_OBJECTS = \
@@ -94,6 +94,7 @@ provider_EXTERNAL_OBJECTS =
 ../bin/provider: example/callee/CMakeFiles/provider.dir/UserService.cc.o
 ../bin/provider: example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
 ../bin/provider: example/callee/CMakeFiles/provider.dir/build.make
+../bin/provider: ../lib/libRocket.so
 ../bin/provider: example/callee/CMakeFiles/provider.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/provider"
 	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/provider.dir/link.txt --verbose=$(VERBOSE)

@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++  -DRocket_EXPORTS -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g -fPIC   -o CMakeFiles/Rocket.dir/RocketApplication.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++  -DRocket_EXPORTS -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g -fPIC   -o CMakeFiles/Rocket.dir/RpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/UserService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/user.pb.cc"
+}
+]

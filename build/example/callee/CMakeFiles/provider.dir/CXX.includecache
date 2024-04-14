@@ -46,6 +46,12 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
+../src/include/RocketApplication.h
+
+../src/include/RpcProvider.h
+google/protobuf/service.h
+../src/include/google/protobuf/service.h
+
 /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc
 iostream
 -
@@ -53,4 +59,8 @@ string
 -
 user.pb.h
 /home/ubuntu/Rocket-TinyRPC/example/callee/user.pb.h
+RocketApplication.h
+/home/ubuntu/Rocket-TinyRPC/example/callee/RocketApplication.h
+RpcProvider.h
+/home/ubuntu/Rocket-TinyRPC/example/callee/RpcProvider.h
 
