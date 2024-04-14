@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../../lib/libRocket.pdb"
   "../../lib/libRocket.so"
   "CMakeFiles/Rocket.dir/RocketApplication.cc.o"
+  "CMakeFiles/Rocket.dir/RocketConfig.cc.o"
   "CMakeFiles/Rocket.dir/RpcProvider.cc.o"
 )
 

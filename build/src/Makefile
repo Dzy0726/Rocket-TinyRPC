@@ -152,6 +152,33 @@ RocketApplication.cc.s:
 	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketApplication.cc.s
 .PHONY : RocketApplication.cc.s
 
+RocketConfig.o: RocketConfig.cc.o
+
+.PHONY : RocketConfig.o
+
+# target to build an object file
+RocketConfig.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketConfig.cc.o
+.PHONY : RocketConfig.cc.o
+
+RocketConfig.i: RocketConfig.cc.i
+
+.PHONY : RocketConfig.i
+
+# target to preprocess a source file
+RocketConfig.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketConfig.cc.i
+.PHONY : RocketConfig.cc.i
+
+RocketConfig.s: RocketConfig.cc.s
+
+.PHONY : RocketConfig.s
+
+# target to generate assembly for a file
+RocketConfig.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketConfig.cc.s
+.PHONY : RocketConfig.cc.s
+
 RpcProvider.o: RpcProvider.cc.o
 
 .PHONY : RpcProvider.o
@@ -191,6 +218,9 @@ help:
 	@echo "... RocketApplication.o"
 	@echo "... RocketApplication.i"
 	@echo "... RocketApplication.s"
+	@echo "... RocketConfig.o"
+	@echo "... RocketConfig.i"
+	@echo "... RocketConfig.s"
 	@echo "... RpcProvider.o"
 	@echo "... RpcProvider.i"
 	@echo "... RpcProvider.s"

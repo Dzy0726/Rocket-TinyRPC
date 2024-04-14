@@ -3,6 +3,7 @@
 
 example/callee/CMakeFiles/provider.dir/UserService.cc.o: ../example/user.pb.h
 example/callee/CMakeFiles/provider.dir/UserService.cc.o: ../src/include/RocketApplication.h
+example/callee/CMakeFiles/provider.dir/UserService.cc.o: ../src/include/RocketConfig.h
 example/callee/CMakeFiles/provider.dir/UserService.cc.o: ../src/include/RpcProvider.h
 example/callee/CMakeFiles/provider.dir/UserService.cc.o: ../example/callee/UserService.cc
 

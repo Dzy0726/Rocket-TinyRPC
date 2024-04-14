@@ -47,6 +47,14 @@ google/protobuf/port_undef.inc
 -
 
 ../src/include/RocketApplication.h
+RocketConfig.h
+../src/include/RocketConfig.h
+
+../src/include/RocketConfig.h
+string
+-
+unordered_map
+-
 
 ../src/include/RpcProvider.h
 google/protobuf/service.h

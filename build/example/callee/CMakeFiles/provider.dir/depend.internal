@@ -4,6 +4,7 @@
 example/callee/CMakeFiles/provider.dir/UserService.cc.o
  ../example/user.pb.h
  ../src/include/RocketApplication.h
+ ../src/include/RocketConfig.h
  ../src/include/RpcProvider.h
  /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
