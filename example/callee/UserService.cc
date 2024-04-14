@@ -45,7 +45,17 @@ public:
 };
 
 int main() {
-    UserService us;
-    us.Login("Dzy", "dzy123.0");
+    // 调用框架的初始化操作 (配置)
+    RocketApplication::Init(argc, argv);
+
+    // 把UserService发布到rpc节点上
+    // provider 是一个网络服务对象
+    RpcProvider provider;
+    provider.NotifyService(new UserService());
+    provider.NotifyService(new ProductService());
+
+    // 启动一个rpc服务发布节点 Run以后进程进入阻塞状态，等待远程rpc调用请求
+    provider.Run();
+
     return 0;
 }
