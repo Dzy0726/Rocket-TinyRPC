@@ -112,5 +112,54 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
     std::cout << "args_str: " << args_str << std::endl;
     std::cout << "===============================================" << std::endl;
 
+    // 获取service对象和method对象
+    auto it = m_serviceMap.find(service_name);
+    if (it == m_serviceMap.end()) {
+        // 没找到对应的服务
+        std::cout << service_name << " is not exist!" << std::endl;
+        return;
+    }
 
+    auto mit = it -> second.m_methodMap.find(method_name);
+    if (mit == it -> second.m_methodMap.end()) {
+        // 没找到对应的方法
+        std::cout << service_name << ":"  << method_name << " is not exist!" << std::endl;
+        return;
+    }
+
+
+    google::protobuf::Service *service = it -> second.m_service;// 获取service对象  如UserService
+    const google::protobuf::MethodDescriptor *method = mit -> second; // 获取method对象 如Login方法
+
+    // 生成RPC方法调用的request和response参数
+    google::protobuf::Message *request = service -> GetRequestPrototype(method).New();
+    if (!request -> ParseFromString(args_str)) {
+        std::cout << "request parse error, content: " << args_str << std::endl;
+        return;
+    }
+    google::protobuf::Message *response = service -> GetResponsePrototype(method).New();
+
+    // 给下面的Callmethod调用，绑定一个Closure的回调函数
+    google::protobuf::Closure *done = google::protobuf::NewCallback<RpcProvider, 
+                                                                    const muduo::net::TcpConnectionPtr&, 
+                                                                    google::protobuf::Message*>
+                                                                    (this, &RpcProvider::SendRpcResponse, conn, response);
+
+    // 在框架上根据远端rpc请求，调用当前rpc节点上发布的方法
+    // 相当于是new UserService().Login(controller, request, response, done)
+    service -> CallMethod(method, nullptr, request, response, done);
+
+    
 }
+
+void RpcProvider::SendRpcResponse(const muduo::net::TcpConnectionPtr& conn, google::protobuf::Message* response) {
+    std::string response_str;
+    if (response -> SerializeToString(&response_str)) { // response序列化
+        // 序列化成功后，通过网络把RPC方法执行的结果发送回rpc的调用方
+        conn -> send(response_str);
+    } else {
+        std::cout << "Serialize response_str error! " << std::endl;
+    }
+    conn -> shutdown(); // 模拟HTTP短链接服务，由rpcprovider主动断开连接，为更多的rpc调用方提供服务
+}
+
