@@ -20,6 +20,11 @@
   "file": "/home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc"
 },
 {
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc"
+},
+{
   "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
   "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/UserService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc",
   "file": "/home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc"

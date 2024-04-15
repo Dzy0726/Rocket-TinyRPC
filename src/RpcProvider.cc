@@ -38,6 +38,8 @@ void RpcProvider::NotifyService(google::protobuf::Service *service) {
 
 // 启动rpc服务节点，开始提供rpc远程网络调用服务
 void RpcProvider::Run() {
+    
+    // 读取配置文件rpcserver的信息
     std::string ip = RocketApplication::GetInstance().GetConfig().Load("rpcserverip");
     uint16_t port = atoi(RocketApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
     muduo::net::InetAddress address(ip, port);

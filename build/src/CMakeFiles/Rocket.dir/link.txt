@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../lib/libRocket.a  CMakeFiles/Rocket.dir/RocketApplication.cc.o CMakeFiles/Rocket.dir/RocketConfig.cc.o CMakeFiles/Rocket.dir/RpcProvider.cc.o CMakeFiles/Rocket.dir/rpcheader.pb.cc.o
+/usr/bin/ar qc ../../lib/libRocket.a  CMakeFiles/Rocket.dir/RocketApplication.cc.o CMakeFiles/Rocket.dir/RocketConfig.cc.o CMakeFiles/Rocket.dir/RpcProvider.cc.o CMakeFiles/Rocket.dir/rpcheader.pb.cc.o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o
 /usr/bin/ranlib ../../lib/libRocket.a

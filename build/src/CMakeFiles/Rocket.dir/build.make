@@ -109,12 +109,26 @@ src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/rpcheader.pb.cc.s"
 	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc -o CMakeFiles/Rocket.dir/rpcheader.pb.cc.s
 
+src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: src/CMakeFiles/Rocket.dir/flags.make
+src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/RocketRpcChannel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc
+
+src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RocketRpcChannel.cc.i"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc > CMakeFiles/Rocket.dir/RocketRpcChannel.cc.i
+
+src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s
+
 # Object files for target Rocket
 Rocket_OBJECTS = \
 "CMakeFiles/Rocket.dir/RocketApplication.cc.o" \
 "CMakeFiles/Rocket.dir/RocketConfig.cc.o" \
 "CMakeFiles/Rocket.dir/RpcProvider.cc.o" \
-"CMakeFiles/Rocket.dir/rpcheader.pb.cc.o"
+"CMakeFiles/Rocket.dir/rpcheader.pb.cc.o" \
+"CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o"
 
 # External object files for target Rocket
 Rocket_EXTERNAL_OBJECTS =
@@ -123,9 +137,10 @@ Rocket_EXTERNAL_OBJECTS =
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketConfig.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RpcProvider.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o
+../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/build.make
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/libRocket.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libRocket.a"
 	cd /home/ubuntu/Rocket-TinyRPC/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Rocket.dir/cmake_clean_target.cmake
 	cd /home/ubuntu/Rocket-TinyRPC/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Rocket.dir/link.txt --verbose=$(VERBOSE)
 
