@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketApplication.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketConfig.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/rpcheader.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/UserService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/user.pb.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/user.pb.cc"
+}
+]

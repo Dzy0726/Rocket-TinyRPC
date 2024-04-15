@@ -9,5 +9,11 @@ src/CMakeFiles/Rocket.dir/RocketConfig.cc.o
  ../src/include/RocketConfig.h
  /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc
 src/CMakeFiles/Rocket.dir/RpcProvider.cc.o
+ ../src/include/RocketApplication.h
+ ../src/include/RocketConfig.h
  ../src/include/RpcProvider.h
  /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc
+ /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.h
+src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o
+ /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc
+ /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.h

@@ -7,13 +7,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketApplication.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketConfig.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RpcProvider.cc.o"
+  "/home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "Rocket_EXPORTS"
-  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

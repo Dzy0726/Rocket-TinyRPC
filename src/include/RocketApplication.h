@@ -6,11 +6,10 @@ class RocketApplication {
 public:
     static void Init(int argc, char **argv);
     static RocketApplication& GetInstance();
-
+    static RocketConfig& GetConfig();
 
 private:
     static RocketConfig m_config;
-
     RocketApplication(){}
     RocketApplication(const RocketApplication&) = delete;
     RocketApplication(RocketApplication&&) = delete; 

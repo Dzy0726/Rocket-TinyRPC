@@ -49,3 +49,7 @@ RocketApplication& RocketApplication::GetInstance() {
     static RocketApplication app;
     return app;
 }
+
+RocketConfig& RocketApplication::GetConfig() {
+    return m_config;
+}
