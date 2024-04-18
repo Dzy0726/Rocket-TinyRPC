@@ -36,5 +36,22 @@ int main(int argc, char** argv) {
         std::cout << "rpc login response error: " << response.result().errormsg() << std::endl;
     }
 
+    fixbug::RegisterRequest registerRequest;
+    registerRequest.set_id(0);
+    registerRequest.set_name("Dzy Register");
+    registerRequest.set_pwd("123456");
+
+    fixbug::RegisterResponse registerResponse;
+
+    stub.Register(nullptr, &registerRequest, &registerResponse, nullptr);
+
+
+    // 以同步的方式发起调用请求，返回结果-registerResponse
+    if (registerResponse.result().errorcode() == 0) {
+        std::cout << "rpc register response success: " << registerResponse.success() << std::endl;
+    } else {
+        std::cout << "rpc register response error: " << registerResponse.result().errormsg() << std::endl;
+    }
+
     return 0;
 }

@@ -125,59 +125,59 @@ provider/fast:
 	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
 .PHONY : provider/fast
 
-UserService.o: UserService.cc.o
+FriendService.o: FriendService.cc.o
 
-.PHONY : UserService.o
-
-# target to build an object file
-UserService.cc.o:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/UserService.cc.o
-.PHONY : UserService.cc.o
-
-UserService.i: UserService.cc.i
-
-.PHONY : UserService.i
-
-# target to preprocess a source file
-UserService.cc.i:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/UserService.cc.i
-.PHONY : UserService.cc.i
-
-UserService.s: UserService.cc.s
-
-.PHONY : UserService.s
-
-# target to generate assembly for a file
-UserService.cc.s:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/UserService.cc.s
-.PHONY : UserService.cc.s
-
-__/user.pb.o: __/user.pb.cc.o
-
-.PHONY : __/user.pb.o
+.PHONY : FriendService.o
 
 # target to build an object file
-__/user.pb.cc.o:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
-.PHONY : __/user.pb.cc.o
+FriendService.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/FriendService.cc.o
+.PHONY : FriendService.cc.o
 
-__/user.pb.i: __/user.pb.cc.i
+FriendService.i: FriendService.cc.i
 
-.PHONY : __/user.pb.i
+.PHONY : FriendService.i
 
 # target to preprocess a source file
-__/user.pb.cc.i:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i
-.PHONY : __/user.pb.cc.i
+FriendService.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/FriendService.cc.i
+.PHONY : FriendService.cc.i
 
-__/user.pb.s: __/user.pb.cc.s
+FriendService.s: FriendService.cc.s
 
-.PHONY : __/user.pb.s
+.PHONY : FriendService.s
 
 # target to generate assembly for a file
-__/user.pb.cc.s:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s
-.PHONY : __/user.pb.cc.s
+FriendService.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/FriendService.cc.s
+.PHONY : FriendService.cc.s
+
+__/friend.pb.o: __/friend.pb.cc.o
+
+.PHONY : __/friend.pb.o
+
+# target to build an object file
+__/friend.pb.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o
+.PHONY : __/friend.pb.cc.o
+
+__/friend.pb.i: __/friend.pb.cc.i
+
+.PHONY : __/friend.pb.i
+
+# target to preprocess a source file
+__/friend.pb.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.i
+.PHONY : __/friend.pb.cc.i
+
+__/friend.pb.s: __/friend.pb.cc.s
+
+.PHONY : __/friend.pb.s
+
+# target to generate assembly for a file
+__/friend.pb.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.s
+.PHONY : __/friend.pb.cc.s
 
 # Help Target
 help:
@@ -188,12 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... provider"
-	@echo "... UserService.o"
-	@echo "... UserService.i"
-	@echo "... UserService.s"
-	@echo "... __/user.pb.o"
-	@echo "... __/user.pb.i"
-	@echo "... __/user.pb.s"
+	@echo "... FriendService.o"
+	@echo "... FriendService.i"
+	@echo "... FriendService.s"
+	@echo "... __/friend.pb.o"
+	@echo "... __/friend.pb.i"
+	@echo "... __/friend.pb.s"
 .PHONY : help
 
 

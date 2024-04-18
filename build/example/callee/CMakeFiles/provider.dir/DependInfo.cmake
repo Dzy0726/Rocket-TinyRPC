@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc" "/home/ubuntu/Rocket-TinyRPC/build/example/callee/CMakeFiles/provider.dir/UserService.cc.o"
-  "/home/ubuntu/Rocket-TinyRPC/example/user.pb.cc" "/home/ubuntu/Rocket-TinyRPC/build/example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
+  "/home/ubuntu/Rocket-TinyRPC/example/callee/FriendService.cc" "/home/ubuntu/Rocket-TinyRPC/build/example/callee/CMakeFiles/provider.dir/FriendService.cc.o"
+  "/home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc" "/home/ubuntu/Rocket-TinyRPC/build/example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

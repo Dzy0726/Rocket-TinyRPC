@@ -93,11 +93,11 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
         return;
     }
 
-    std::string response_str(recv_buf, 0, recv_size);
+    // std::string response_str(recv_buf, 0, recv_size); // 出现bug
     
     // 数据反序列化rpc调用的响应数据
-    if (!response->ParseFromString(response_str)) {
-        std::cout << "Parse error! response_str: " << response_str << std::endl;
+    if (!response->ParseFromArray(recv_buf, recv_size)) {
+        std::cout << "Parse error! response_str: " << recv_buf << std::endl;
         close(clientFd);
         return;
     }

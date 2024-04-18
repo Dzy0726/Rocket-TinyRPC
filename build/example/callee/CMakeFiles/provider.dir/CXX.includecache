@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../example/user.pb.h
+../example/friend.pb.h
 limits
 -
 string
@@ -76,13 +76,15 @@ google/protobuf/descriptor.h
 unordered_map
 -
 
-/home/ubuntu/Rocket-TinyRPC/example/callee/UserService.cc
+/home/ubuntu/Rocket-TinyRPC/example/callee/FriendService.cc
 iostream
 -
 string
 -
-user.pb.h
-/home/ubuntu/Rocket-TinyRPC/example/callee/user.pb.h
+vector
+-
+friend.pb.h
+/home/ubuntu/Rocket-TinyRPC/example/callee/friend.pb.h
 RocketApplication.h
 /home/ubuntu/Rocket-TinyRPC/example/callee/RocketApplication.h
 RpcProvider.h

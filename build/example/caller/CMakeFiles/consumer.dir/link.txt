@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/consumer.dir/CallFriendService.cc.o CMakeFiles/consumer.dir/__/friend.pb.cc.o  -o ../../../bin/consumer   -L/home/ubuntu/Rocket-TinyRPC/lib  -Wl,-rpath,/home/ubuntu/Rocket-TinyRPC/lib ../../../lib/libRocket.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread 
