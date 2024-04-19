@@ -1,7 +1,7 @@
 #include <iostream>
 #include "RocketApplication.h"
 #include "friend.pb.h"
-#include "RocketRpcChannel.h"
+
 
 /**
  * 业务代码:方法的消费者
@@ -22,22 +22,29 @@ int main(int argc, char** argv) {
     // rpc方法的响应参数
     fixbug::GetFriendListResponse response;
 
+    RocketRpcController controller;
+
 
     // rpc方法的调用 同步的rpc调用过程
     // stub.GetFriendList(); 底层是调用了RpcChannel -> callMethod(); 集中来做所有rpc方法调用的参数序列化和网络发送
     // RpcChannel是抽象类，callMethod是纯虚函数，所以需要写一个类继承RpcChannel并重写callMethod函数，而这部分工作应该是框架来做（服务端）
-    stub.GetFriendList(nullptr, &request, &response, nullptr);
+    stub.GetFriendList(&controller, &request, &response, nullptr);
 
     // 一次rpc调用完成，读调用的结果--response
-    if (response.result().errorcode() == 0) {
-        std::cout << "rpc GetFriendList response success" << std::endl;
-        int size = response.friends_size();
-        for (int i = 0; i < size; ++i) {
-            std::cout << "index: " << i << "name: " << response.friends(i) << std::endl;
-        }
+    if (controller.Failed()) {
+        std::cout << controller.ErrorText() << std::endl;
     } else {
-        std::cout << "rpc GetFriendList response error: " << response.result().errormsg() << std::endl;
+        if (response.result().errorcode() == 0) {
+            std::cout << "rpc GetFriendList response success" << std::endl;
+            int size = response.friends_size();
+            for (int i = 0; i < size; ++i) {
+                std::cout << "index: " << i << "name: " << response.friends(i) << std::endl;
+            }
+        } else {
+            std::cout << "rpc GetFriendList response error: " << response.result().errormsg() << std::endl;
+        }
     }
+    
 
 
     return 0;

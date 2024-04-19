@@ -206,6 +206,33 @@ RocketRpcChannel.cc.s:
 	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s
 .PHONY : RocketRpcChannel.cc.s
 
+RocketRpcController.o: RocketRpcController.cc.o
+
+.PHONY : RocketRpcController.o
+
+# target to build an object file
+RocketRpcController.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o
+.PHONY : RocketRpcController.cc.o
+
+RocketRpcController.i: RocketRpcController.cc.i
+
+.PHONY : RocketRpcController.i
+
+# target to preprocess a source file
+RocketRpcController.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcController.cc.i
+.PHONY : RocketRpcController.cc.i
+
+RocketRpcController.s: RocketRpcController.cc.s
+
+.PHONY : RocketRpcController.s
+
+# target to generate assembly for a file
+RocketRpcController.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcController.cc.s
+.PHONY : RocketRpcController.cc.s
+
 RpcProvider.o: RpcProvider.cc.o
 
 .PHONY : RpcProvider.o
@@ -278,6 +305,9 @@ help:
 	@echo "... RocketRpcChannel.o"
 	@echo "... RocketRpcChannel.i"
 	@echo "... RocketRpcChannel.s"
+	@echo "... RocketRpcController.o"
+	@echo "... RocketRpcController.i"
+	@echo "... RocketRpcController.s"
 	@echo "... RpcProvider.o"
 	@echo "... RpcProvider.i"
 	@echo "... RpcProvider.s"

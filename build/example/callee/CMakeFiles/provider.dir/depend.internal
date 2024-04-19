@@ -5,7 +5,10 @@ example/callee/CMakeFiles/provider.dir/FriendService.cc.o
  ../example/friend.pb.h
  ../src/include/RocketApplication.h
  ../src/include/RocketConfig.h
+ ../src/include/RocketRpcChannel.h
+ ../src/include/RocketRpcController.h
  ../src/include/RpcProvider.h
+ ../src/include/rpcheader.pb.h
  /home/ubuntu/Rocket-TinyRPC/example/callee/FriendService.cc
 example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o
  /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc

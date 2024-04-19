@@ -1,4 +1,5 @@
 #include "RocketRpcChannel.h"
+#include "RocketRpcChannel.h"
 
 /**
  * header_size + service_name method_name args_size + args
@@ -19,7 +20,7 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     if (request->SerializeToString(&args_str)) {
         args_size = args_str.size();
     } else {
-        std::cout << "Serialize request error!" << std::endl;
+        controller -> SetFailed("Serialize request error!");
         return;
     }
 
@@ -34,7 +35,7 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     if (rpcHeader.SerializeToString(&rpc_header_str)) {
         header_size = rpc_header_str.size();
     } else {
-        std::cout << "Serialize rpcHeader error!" << std::endl;
+        controller -> SetFailed("Serialize rpcHeader error!");
         return;
     }
 
@@ -56,8 +57,10 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     // 使用tcp编程，完成rpc方法的远程调用
     int clientFd = socket(AF_INET, SOCK_STREAM, 0);
     if (clientFd == -1) {
-        std::cout << "create socket error! errno:" << errno << std::endl;
-        exit(EXIT_FAILURE);
+        char errText[512] = {0};
+        sprintf(errText, "create socket error! errno: %d", errno);
+        controller -> SetFailed(errText);
+        return;
     }
 
     // 读取配置文件rpcserver的信息
@@ -72,15 +75,19 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     // 连接rpc服务节点 点对点直连 
     // TODO： zookeeper服务中心发现一下节点
     if (-1 == connect(clientFd, (struct sockaddr*)&server_addr, sizeof(server_addr))) {
-        std::cout << "connect error! errno: " << errno << std::endl;
         close(clientFd);
-        exit(EXIT_FAILURE);
+        char errText[512] = {0};
+        sprintf(errText, "connect error! errno: %d", errno);
+        controller -> SetFailed(errText);
+        return;
     }
 
     // 发送rpc请求
     if (-1 == send(clientFd, send_rpc_str.c_str(), send_rpc_str.size(), 0)) {
-        std::cout << "send error! errno: " << errno << std::endl;
         close(clientFd);
+        char errText[512] = {0};
+        sprintf(errText, "send error! errno: %d", errno);
+        controller -> SetFailed(errText);
         return;
     }
 
@@ -88,8 +95,10 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     char recv_buf[1024] = {0};
     int recv_size = 0;
     if (-1 == (recv_size = recv(clientFd, recv_buf, 1024, 0))) {
-        std::cout << "recv error! errno: " << errno << std::endl;
         close(clientFd);
+        char errText[512] = {0};
+        sprintf(errText, "recv error! errno: %d", errno);
+        controller -> SetFailed(errText);
         return;
     }
 
@@ -97,8 +106,10 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     
     // 数据反序列化rpc调用的响应数据
     if (!response->ParseFromArray(recv_buf, recv_size)) {
-        std::cout << "Parse error! response_str: " << recv_buf << std::endl;
         close(clientFd);
+        char errText[512] = {0};
+        sprintf(errText, "parse error! errno: %d", errno);
+        controller -> SetFailed(errText);
         return;
     }
 

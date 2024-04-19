@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketApplication.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketConfig.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o"
+  "/home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RpcProvider.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o"
   )

@@ -5,6 +5,7 @@ example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../example/friend
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../src/include/RocketApplication.h
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../src/include/RocketConfig.h
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../src/include/RocketRpcChannel.h
+example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../src/include/RocketRpcController.h
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../src/include/rpcheader.pb.h
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../example/caller/CallFriendService.cc
 

@@ -60,28 +60,28 @@ include example/caller/CMakeFiles/consumer.dir/flags.make
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: example/caller/CMakeFiles/consumer.dir/flags.make
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o: ../example/caller/CallFriendService.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/CallFriendService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/CallFriendService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc
 
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/consumer.dir/CallFriendService.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc > CMakeFiles/consumer.dir/CallFriendService.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc > CMakeFiles/consumer.dir/CallFriendService.cc.i
 
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/consumer.dir/CallFriendService.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc -o CMakeFiles/consumer.dir/CallFriendService.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc -o CMakeFiles/consumer.dir/CallFriendService.cc.s
 
 example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.o: example/caller/CMakeFiles/consumer.dir/flags.make
 example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.o: ../example/friend.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc
 
 example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/consumer.dir/__/friend.pb.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc > CMakeFiles/consumer.dir/__/friend.pb.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc > CMakeFiles/consumer.dir/__/friend.pb.cc.i
 
 example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/consumer.dir/__/friend.pb.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc -o CMakeFiles/consumer.dir/__/friend.pb.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc -o CMakeFiles/consumer.dir/__/friend.pb.cc.s
 
 # Object files for target consumer
 consumer_OBJECTS = \

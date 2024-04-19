@@ -4,7 +4,10 @@
 example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../example/friend.pb.h
 example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../src/include/RocketApplication.h
 example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../src/include/RocketConfig.h
+example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../src/include/RocketRpcChannel.h
+example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../src/include/RocketRpcController.h
 example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../src/include/RpcProvider.h
+example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../src/include/rpcheader.pb.h
 example/callee/CMakeFiles/provider.dir/FriendService.cc.o: ../example/callee/FriendService.cc
 
 example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o: ../example/friend.pb.cc

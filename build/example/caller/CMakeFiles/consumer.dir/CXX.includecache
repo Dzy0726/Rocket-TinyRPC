@@ -49,6 +49,10 @@ google/protobuf/port_undef.inc
 ../src/include/RocketApplication.h
 RocketConfig.h
 ../src/include/RocketConfig.h
+RocketRpcChannel.h
+../src/include/RocketRpcChannel.h
+RocketRpcController.h
+../src/include/RocketRpcController.h
 
 ../src/include/RocketConfig.h
 string
@@ -80,6 +84,12 @@ arpa/inet.h
 netinet/in.h
 -
 unistd.h
+-
+
+../src/include/RocketRpcController.h
+google/protobuf/service.h
+-
+string
 -
 
 ../src/include/rpcheader.pb.h
@@ -127,6 +137,4 @@ RocketApplication.h
 /home/ubuntu/Rocket-TinyRPC/example/caller/RocketApplication.h
 friend.pb.h
 /home/ubuntu/Rocket-TinyRPC/example/caller/friend.pb.h
-RocketRpcChannel.h
-/home/ubuntu/Rocket-TinyRPC/example/caller/RocketRpcChannel.h
 
