@@ -1,0 +1,28 @@
+1-30-8 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+1-30-8 => [INFO] RPC SERVER IP: 127.0.0.1
+1-30-8 => [INFO] RPC SERVER PROT: 1913594080
+1-30-8 => [INFO] ZOOKEEPER IP: 127.0.0.1
+1-30-8 => [INFO] ZOOKEEPER PORT: 1913594144
+1-30-8 => [INFO] =================================================
+1-30-8 => [INFO] Service Name: FriendServiceRpc
+1-30-8 => [INFO] Method Name: GetFriendList
+1-30-8 => [INFO] RPCProvider start service at ip: 127.0.0.1, port: 8000
+1-30-36 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+1-30-36 => [INFO] RPC SERVER IP: 127.0.0.1
+1-30-36 => [INFO] RPC SERVER PROT: 1947168352
+1-30-8 => [INFO] ============ INFO ABOUT RPC METHODS ==============
+1-30-36 => [INFO] Header Size: 33
+1-30-36 => [INFO] RPC Header String: 
+FriendServiceRpcGetFriendList
+1-30-36 => [INFO] Service Name: FriendServiceRpc
+1-30-36 => [INFO] Method Name: GetFriendList
+1-30-36 => [INFO] Args String: 
+1-30-36 => [INFO] =================================================
+1-30-36 => [INFO] ZOOKEEPER IP: 127.0.0.1
+1-30-36 => [INFO] ZOOKEEPER PORT: 1947168416
+1-30-36 => [INFO] =================================================
+1-30-36 => [INFO] ============ INFO ABOUT RPC METHODS ==============
+1-30-36 => [INFO] Header Size: 33
+1-30-36 => [INFO] RPC Header String: 
+FriendServiceRpcGetFriendList
+1-30-36 => [INFO] P¸§\­U

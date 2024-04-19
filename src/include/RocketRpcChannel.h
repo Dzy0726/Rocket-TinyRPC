@@ -12,6 +12,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <unistd.h>
+#include <Logger.h>
 
 
 class RocketRpcChannel : public google::protobuf::RpcChannel {

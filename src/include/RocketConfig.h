@@ -2,6 +2,7 @@
 
 #include <string>
 #include <unordered_map>
+#include "Logger.h"
 
 // 框架读取配置文件类
 // rpcserverip rpcserverport zookeeperip zookeeperport

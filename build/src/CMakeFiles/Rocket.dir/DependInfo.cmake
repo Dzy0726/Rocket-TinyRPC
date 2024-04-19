@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ubuntu/Rocket-TinyRPC/src/Logger.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/Logger.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketApplication.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketConfig.cc.o"
   "/home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc" "/home/ubuntu/Rocket-TinyRPC/build/src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o"

@@ -46,6 +46,22 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
+../src/include/LockQueue.h
+queue
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+
+../src/include/Logger.h
+string
+-
+LockQueue.h
+../src/include/LockQueue.h
+
 ../src/include/RocketApplication.h
 RocketConfig.h
 ../src/include/RocketConfig.h
@@ -53,12 +69,16 @@ RocketRpcChannel.h
 ../src/include/RocketRpcChannel.h
 RocketRpcController.h
 ../src/include/RocketRpcController.h
+Logger.h
+../src/include/Logger.h
 
 ../src/include/RocketConfig.h
 string
 -
 unordered_map
 -
+Logger.h
+../src/include/Logger.h
 
 ../src/include/RocketRpcChannel.h
 google/protobuf/service.h
@@ -84,6 +104,8 @@ arpa/inet.h
 netinet/in.h
 -
 unistd.h
+-
+Logger.h
 -
 
 ../src/include/RocketRpcController.h
@@ -111,6 +133,8 @@ google/protobuf/descriptor.h
 -
 unordered_map
 -
+Logger.h
+../src/include/Logger.h
 
 ../src/include/rpcheader.pb.h
 limits
@@ -163,4 +187,6 @@ RocketApplication.h
 /home/ubuntu/Rocket-TinyRPC/example/callee/RocketApplication.h
 RpcProvider.h
 /home/ubuntu/Rocket-TinyRPC/example/callee/RpcProvider.h
+Logger.h
+/home/ubuntu/Rocket-TinyRPC/example/callee/Logger.h
 

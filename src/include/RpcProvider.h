@@ -8,6 +8,7 @@
 #include <functional>
 #include <google/protobuf/descriptor.h>
 #include <unordered_map>
+#include "Logger.h"
 
 // 框架提供的专门服务发布rpc服务的网络对象类
 class RpcProvider {

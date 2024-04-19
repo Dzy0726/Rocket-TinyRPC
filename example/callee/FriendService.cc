@@ -4,6 +4,7 @@
 #include "friend.pb.h"
 #include "RocketApplication.h"
 #include "RpcProvider.h"
+#include "Logger.h"
 
 
 
@@ -35,6 +36,10 @@ class FriendService : public fixbug::FriendServiceRpc{
 };
 
 int main(int argc, char** argv) {
+    // // 测试日志模块
+    // LOG_INFO("First log message!");
+    // LOG_ERROR("%s:%s:%d", __FILE__, __FUNCTION__, __LINE__);
+
     // 调用框架的初始化操作 (配置)
     RocketApplication::Init(argc, argv);
 

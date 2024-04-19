@@ -19,7 +19,8 @@ void RpcProvider::NotifyService(google::protobuf::Service *service) {
     std::string service_name = pserviceDesc -> name();
     // 获取服务对象service的方法的数量
     int methodCount = pserviceDesc -> method_count();
-    std::cout << "Service Name: " << service_name << std::endl;
+    // std::cout << "Service Name: " << service_name << std::endl;
+    LOG_INFO("Service Name: %s", service_name.c_str());
 
     for (int i = 0; i < methodCount; ++i) {
         // 获取了服务对象指定下标的服务方法的描述（抽象描述）
@@ -27,7 +28,8 @@ void RpcProvider::NotifyService(google::protobuf::Service *service) {
         std::string method_name = pmethodDesc -> name();
         service_info.m_methodMap.insert({method_name, pmethodDesc});
 
-        std::cout << "Method " << i << " Name: " << method_name << std::endl;
+        // std::cout << "Method " << i << " Name: " << method_name << std::endl;
+        LOG_INFO("Method Name: %s", method_name.c_str());
 
     }
     service_info.m_service = service;
@@ -53,7 +55,8 @@ void RpcProvider::Run() {
     // 设置muduo库的线程数量
     server.setThreadNum(4);
 
-    std::cout << "RPCProvider start service at ip: " << ip << " port: " << port << std::endl; 
+    // std::cout << "RPCProvider start service at ip: " << ip << " port: " << port << std::endl; 
+    LOG_INFO("RPCProvider start service at ip: %s, port: %d", ip.c_str(), port);
     // 启动网络服务
     server.start();
     m_eventLoop.loop();
@@ -98,7 +101,8 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
         method_name = rpcHeader.method_name();
         args_size = rpcHeader.args_size();
     } else {
-        std::cout << "rpc_header_str: " << rpc_header_str << " Paser Error!" << std::endl;
+        // std::cout << "rpc_header_str: " << rpc_header_str << " Paser Error!" << std::endl;
+        LOG_ERROR("RPC Header String: %s Paser Error!", rpc_header_str.c_str());
         return;
     }
     
@@ -106,26 +110,37 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
     std::string args_str = recv_buf.substr(4 + header_size, args_size);
 
     // 打印调试信息
-    std::cout << "===============================================" << std::endl;
-    std::cout << "header_size: " << header_size << std::endl;
-    std::cout << "rpc_header_str: " << rpc_header_str << std::endl;
-    std::cout << "service_name: " << service_name << std::endl;
-    std::cout << "method_name: " << method_name << std::endl;
-    std::cout << "args_str: " << args_str << std::endl;
-    std::cout << "===============================================" << std::endl;
+    // std::cout << "===============================================" << std::endl;
+    // std::cout << "header_size: " << header_size << std::endl;
+    // std::cout << "rpc_header_str: " << rpc_header_str << std::endl;
+    // std::cout << "service_name: " << service_name << std::endl;
+    // std::cout << "method_name: " << method_name << std::endl;
+    // std::cout << "args_str: " << args_str << std::endl;
+    // std::cout << "===============================================" << std::endl;
+
+    LOG_INFO("============ INFO ABOUT RPC METHODS ==============");
+    LOG_INFO("Header Size: %d", header_size);
+    LOG_INFO("RPC Header String: %s", rpc_header_str.c_str());
+    LOG_INFO("Service Name: %s", service_name.c_str());
+    LOG_INFO("Method Name: %s", method_name.c_str());
+    LOG_INFO("Args String: %s", args_str.c_str());
+    LOG_INFO("=================================================");
+
 
     // 获取service对象和method对象
     auto it = m_serviceMap.find(service_name);
     if (it == m_serviceMap.end()) {
         // 没找到对应的服务
-        std::cout << service_name << " is not exist!" << std::endl;
+        // std::cout << service_name << " is not exist!" << std::endl;
+        LOG_ERROR("Service Name: %s is not exist!", service_name.c_str());
         return;
     }
 
     auto mit = it -> second.m_methodMap.find(method_name);
     if (mit == it -> second.m_methodMap.end()) {
         // 没找到对应的方法
-        std::cout << service_name << ":"  << method_name << " is not exist!" << std::endl;
+        // std::cout << service_name << ":"  << method_name << " is not exist!" << std::endl;
+        LOG_ERROR("Service Name: %s : %s is not exist!", service_name.c_str(), method_name.c_str());
         return;
     }
 
@@ -136,7 +151,8 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
     // 生成RPC方法调用的request和response参数
     google::protobuf::Message *request = service -> GetRequestPrototype(method).New();
     if (!request -> ParseFromString(args_str)) {
-        std::cout << "request parse error, content: " << args_str << std::endl;
+        // std::cout << "request parse error, content: " << args_str << std::endl;
+        LOG_ERROR("Request parse error, content: %s ", args_str.c_str());
         return;
     }
     google::protobuf::Message *response = service -> GetResponsePrototype(method).New();
@@ -160,7 +176,8 @@ void RpcProvider::SendRpcResponse(const muduo::net::TcpConnectionPtr& conn, goog
         // 序列化成功后，通过网络把RPC方法执行的结果发送回rpc的调用方
         conn -> send(response_str);
     } else {
-        std::cout << "Serialize response_str error! " << std::endl;
+        // std::cout << "Serialize response_str error! " << std::endl;
+        LOG_ERROR("Serialize response_str error!");
     }
     conn -> shutdown(); // 模拟HTTP短链接服务，由rpcprovider主动断开连接，为更多的rpc调用方提供服务
 }

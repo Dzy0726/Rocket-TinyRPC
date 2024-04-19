@@ -3,6 +3,8 @@
 
 example/caller/CMakeFiles/consumer.dir/CallFriendService.cc.o
  ../example/friend.pb.h
+ ../src/include/LockQueue.h
+ ../src/include/Logger.h
  ../src/include/RocketApplication.h
  ../src/include/RocketConfig.h
  ../src/include/RocketRpcChannel.h

@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketApplication.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketConfig.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/rpcheader.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketRpcController.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/Logger.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/Logger.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/Logger.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/FriendService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/callee/FriendService.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/callee/FriendService.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/consumer.dir/CallFriendService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/caller/CallFriendService.cc"
+},
+{
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/example/friend.pb.cc"
+}
+]

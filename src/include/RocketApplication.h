@@ -3,6 +3,8 @@
 #include "RocketConfig.h"
 #include "RocketRpcChannel.h"
 #include "RocketRpcController.h"
+#include "Logger.h"
+
 // 框架的基础类 单例模式 完成框架的初始化
 class RocketApplication {
 public:

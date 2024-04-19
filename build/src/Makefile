@@ -125,6 +125,33 @@ Rocket/fast:
 	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/build
 .PHONY : Rocket/fast
 
+Logger.o: Logger.cc.o
+
+.PHONY : Logger.o
+
+# target to build an object file
+Logger.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/Logger.cc.o
+.PHONY : Logger.cc.o
+
+Logger.i: Logger.cc.i
+
+.PHONY : Logger.i
+
+# target to preprocess a source file
+Logger.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/Logger.cc.i
+.PHONY : Logger.cc.i
+
+Logger.s: Logger.cc.s
+
+.PHONY : Logger.s
+
+# target to generate assembly for a file
+Logger.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/Logger.cc.s
+.PHONY : Logger.cc.s
+
 RocketApplication.o: RocketApplication.cc.o
 
 .PHONY : RocketApplication.o
@@ -296,6 +323,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Rocket"
+	@echo "... Logger.o"
+	@echo "... Logger.i"
+	@echo "... Logger.s"
 	@echo "... RocketApplication.o"
 	@echo "... RocketApplication.i"
 	@echo "... RocketApplication.s"

@@ -7,7 +7,8 @@
 void RocketConfig::LoadConfigFile(const char* configFile) {
     FILE *pf = fopen(configFile, "r");
     if (pf == nullptr) {
-        std::cout << configFile << " is not exist!" << std::endl;
+        // std::cout << configFile << " is not exist!" << std::endl;
+        LOG_ERROR("Config File: %s is not exist!", configFile);
         exit(EXIT_FAILURE);
     }
 

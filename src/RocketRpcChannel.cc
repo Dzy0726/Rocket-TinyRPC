@@ -46,14 +46,23 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     send_rpc_str += args_str;
 
     // 打印调试信息
-    std::cout << "===============================================" << std::endl;
-    std::cout << "header_size: " << header_size << std::endl;
-    std::cout << "rpc_header_str: " << rpc_header_str << std::endl;
-    std::cout << "service_name: " << service_name << std::endl;
-    std::cout << "method_name: " << method_name << std::endl;
-    std::cout << "args_str: " << args_str << std::endl;
-    std::cout << "===============================================" << std::endl;
-    
+    // std::cout << "===============================================" << std::endl;
+    // std::cout << "header_size: " << header_size << std::endl;
+    // std::cout << "rpc_header_str: " << rpc_header_str << std::endl;
+    // std::cout << "service_name: " << service_name << std::endl;
+    // std::cout << "method_name: " << method_name << std::endl;
+    // std::cout << "args_str: " << args_str << std::endl;
+    // std::cout << "===============================================" << std::endl;
+
+    LOG_INFO("============ INFO ABOUT RPC METHODS ==============");
+    LOG_INFO("Header Size: %d", header_size);
+    LOG_INFO("RPC Header String: %s", rpc_header_str.c_str());
+    LOG_INFO("Service Name: %s", service_name.c_str());
+    LOG_INFO("Method Name: %s", method_name.c_str());
+    LOG_INFO("Args String: %s", args_str.c_str());
+    LOG_INFO("=================================================");
+
+
     // 使用tcp编程，完成rpc方法的远程调用
     int clientFd = socket(AF_INET, SOCK_STREAM, 0);
     if (clientFd == -1) {

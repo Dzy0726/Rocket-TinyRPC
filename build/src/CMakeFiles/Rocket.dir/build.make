@@ -135,6 +135,19 @@ src/CMakeFiles/Rocket.dir/RocketRpcController.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketRpcController.cc.s"
 	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc -o CMakeFiles/Rocket.dir/RocketRpcController.cc.s
 
+src/CMakeFiles/Rocket.dir/Logger.cc.o: src/CMakeFiles/Rocket.dir/flags.make
+src/CMakeFiles/Rocket.dir/Logger.cc.o: ../src/Logger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/Rocket.dir/Logger.cc.o"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/Logger.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/Logger.cc
+
+src/CMakeFiles/Rocket.dir/Logger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/Logger.cc.i"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/Logger.cc > CMakeFiles/Rocket.dir/Logger.cc.i
+
+src/CMakeFiles/Rocket.dir/Logger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/Logger.cc.s"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/Logger.cc -o CMakeFiles/Rocket.dir/Logger.cc.s
+
 # Object files for target Rocket
 Rocket_OBJECTS = \
 "CMakeFiles/Rocket.dir/RocketApplication.cc.o" \
@@ -142,7 +155,8 @@ Rocket_OBJECTS = \
 "CMakeFiles/Rocket.dir/RpcProvider.cc.o" \
 "CMakeFiles/Rocket.dir/rpcheader.pb.cc.o" \
 "CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o" \
-"CMakeFiles/Rocket.dir/RocketRpcController.cc.o"
+"CMakeFiles/Rocket.dir/RocketRpcController.cc.o" \
+"CMakeFiles/Rocket.dir/Logger.cc.o"
 
 # External object files for target Rocket
 Rocket_EXTERNAL_OBJECTS =
@@ -153,9 +167,10 @@ Rocket_EXTERNAL_OBJECTS =
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o
+../lib/libRocket.a: src/CMakeFiles/Rocket.dir/Logger.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/build.make
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../lib/libRocket.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../lib/libRocket.a"
 	cd /home/ubuntu/Rocket-TinyRPC/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Rocket.dir/cmake_clean_target.cmake
 	cd /home/ubuntu/Rocket-TinyRPC/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Rocket.dir/link.txt --verbose=$(VERBOSE)
 
