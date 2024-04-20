@@ -60,106 +60,106 @@ include src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/RocketApplication.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/RocketApplication.cc.o: ../src/RocketApplication.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Rocket.dir/RocketApplication.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketApplication.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketApplication.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc
 
 src/CMakeFiles/Rocket.dir/RocketApplication.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RocketApplication.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc > CMakeFiles/Rocket.dir/RocketApplication.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc > CMakeFiles/Rocket.dir/RocketApplication.cc.i
 
 src/CMakeFiles/Rocket.dir/RocketApplication.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketApplication.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc -o CMakeFiles/Rocket.dir/RocketApplication.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketApplication.cc -o CMakeFiles/Rocket.dir/RocketApplication.cc.s
 
 src/CMakeFiles/Rocket.dir/RocketConfig.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/RocketConfig.cc.o: ../src/RocketConfig.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Rocket.dir/RocketConfig.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketConfig.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketConfig.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc
 
 src/CMakeFiles/Rocket.dir/RocketConfig.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RocketConfig.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc > CMakeFiles/Rocket.dir/RocketConfig.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc > CMakeFiles/Rocket.dir/RocketConfig.cc.i
 
 src/CMakeFiles/Rocket.dir/RocketConfig.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketConfig.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc -o CMakeFiles/Rocket.dir/RocketConfig.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc -o CMakeFiles/Rocket.dir/RocketConfig.cc.s
 
 src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/RocketRpcProvider.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc
 
 src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc > CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc > CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i
 
 src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc -o CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc -o CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s
 
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/rpcheader.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/rpcheader.pb.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc
 
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/rpcheader.pb.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc > CMakeFiles/Rocket.dir/rpcheader.pb.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc > CMakeFiles/Rocket.dir/rpcheader.pb.cc.i
 
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/rpcheader.pb.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc -o CMakeFiles/Rocket.dir/rpcheader.pb.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/rpcheader.pb.cc -o CMakeFiles/Rocket.dir/rpcheader.pb.cc.s
 
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/RocketRpcChannel.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc
 
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RocketRpcChannel.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc > CMakeFiles/Rocket.dir/RocketRpcChannel.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc > CMakeFiles/Rocket.dir/RocketRpcChannel.cc.i
 
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcChannel.cc -o CMakeFiles/Rocket.dir/RocketRpcChannel.cc.s
 
 src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o: ../src/RocketRpcController.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcController.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcController.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc
 
 src/CMakeFiles/Rocket.dir/RocketRpcController.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RocketRpcController.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc > CMakeFiles/Rocket.dir/RocketRpcController.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc > CMakeFiles/Rocket.dir/RocketRpcController.cc.i
 
 src/CMakeFiles/Rocket.dir/RocketRpcController.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketRpcController.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc -o CMakeFiles/Rocket.dir/RocketRpcController.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcController.cc -o CMakeFiles/Rocket.dir/RocketRpcController.cc.s
 
 src/CMakeFiles/Rocket.dir/Logger.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/Logger.cc.o: ../src/Logger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/Rocket.dir/Logger.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/Logger.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/Logger.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/Logger.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/Logger.cc
 
 src/CMakeFiles/Rocket.dir/Logger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/Logger.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/Logger.cc > CMakeFiles/Rocket.dir/Logger.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/Logger.cc > CMakeFiles/Rocket.dir/Logger.cc.i
 
 src/CMakeFiles/Rocket.dir/Logger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/Logger.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/Logger.cc -o CMakeFiles/Rocket.dir/Logger.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/Logger.cc -o CMakeFiles/Rocket.dir/Logger.cc.s
 
 src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/ZookeeperUtil.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc
 
 src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/ZookeeperUtil.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc > CMakeFiles/Rocket.dir/ZookeeperUtil.cc.i
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc > CMakeFiles/Rocket.dir/ZookeeperUtil.cc.i
 
 src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/ZookeeperUtil.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc -o CMakeFiles/Rocket.dir/ZookeeperUtil.cc.s
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc -o CMakeFiles/Rocket.dir/ZookeeperUtil.cc.s
 
 # Object files for target Rocket
 Rocket_OBJECTS = \
