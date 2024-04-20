@@ -42,11 +42,11 @@ void RocketApplication::Init(int argc, char **argv) {
     // std::cout << "rpcserverport: " << m_config.Load("rpcserverport") << std::endl;
     // std::cout << "zookeeperip: " << m_config.Load("zookeeperip") << std::endl;
     // std::cout << "zookeeperport: " << m_config.Load("zookeeperport") << std::endl;
-    LOG_INFO("============ INFO ABOUT RPC CONFIG ==============");
+    LOG_INFO("====== INFO ABOUT RPC METHODS(Application)========");
     LOG_INFO("RPC SERVER IP: %s", m_config.Load("rpcserverip").c_str());
-    LOG_INFO("RPC SERVER PROT: %d", m_config.Load("rpcserverport"));
+    LOG_INFO("RPC SERVER PROT: %s", m_config.Load("rpcserverport").c_str());
     LOG_INFO("ZOOKEEPER IP: %s", m_config.Load("zookeeperip").c_str());
-    LOG_INFO("ZOOKEEPER PORT: %d", m_config.Load("zookeeperport"));
+    LOG_INFO("ZOOKEEPER PORT: %s", m_config.Load("zookeeperport").c_str());
     LOG_INFO("=================================================");
 
 }

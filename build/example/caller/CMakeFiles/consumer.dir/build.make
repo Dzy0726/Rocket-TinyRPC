@@ -95,6 +95,7 @@ consumer_EXTERNAL_OBJECTS =
 ../bin/consumer: example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.o
 ../bin/consumer: example/caller/CMakeFiles/consumer.dir/build.make
 ../bin/consumer: ../lib/libRocket.a
+../bin/consumer: /usr/local/lib/libzookeeper_mt.a
 ../bin/consumer: example/caller/CMakeFiles/consumer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/consumer"
 	cd /home/ubuntu/Rocket-TinyRPC/build/example/caller && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/consumer.dir/link.txt --verbose=$(VERBOSE)

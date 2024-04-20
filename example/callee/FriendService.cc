@@ -3,7 +3,7 @@
 #include <vector>
 #include "friend.pb.h"
 #include "RocketApplication.h"
-#include "RpcProvider.h"
+#include "RocketRpcProvider.h"
 #include "Logger.h"
 
 
@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
 
     // 把FriendService发布到rpc节点上
     // provider 是一个网络服务对象 负责数据序列化反序列化 数据收发
-    RpcProvider provider;
+    RocketRpcProvider provider;
     provider.NotifyService(new FriendService());
 
     // 启动一个rpc服务发布节点 Run以后进程进入阻塞状态，等待远程rpc调用请求

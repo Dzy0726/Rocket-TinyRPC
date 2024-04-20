@@ -1,10 +1,12 @@
 #include "RocketRpcChannel.h"
 #include "RocketRpcChannel.h"
+#include "ZooKeeperUtil.h"
 
 /**
  * header_size + service_name method_name args_size + args
 */
 
+// 所有通过stub代理对象调用的rpc方法，最终都走到了这里，统一做rpc方法调用的数据序列化和网络发送
 void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
                                     google::protobuf::RpcController* controller, 
                                     const google::protobuf::Message* request,
@@ -54,7 +56,7 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     // std::cout << "args_str: " << args_str << std::endl;
     // std::cout << "===============================================" << std::endl;
 
-    LOG_INFO("============ INFO ABOUT RPC METHODS ==============");
+    LOG_INFO("======= INFO ABOUT RPC METHODS(Consumer)=========");    
     LOG_INFO("Header Size: %d", header_size);
     LOG_INFO("RPC Header String: %s", rpc_header_str.c_str());
     LOG_INFO("Service Name: %s", service_name.c_str());
@@ -73,8 +75,27 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     }
 
     // 读取配置文件rpcserver的信息
-    std::string ip = RocketApplication::GetInstance().GetConfig().Load("rpcserverip");
-    uint16_t port = atoi(RocketApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    // std::string ip = RocketApplication::GetInstance().GetConfig().Load("rpcserverip");
+    // uint16_t port = atoi(RocketApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    // rpc调用方想调用service_name服务的method_name的方法，需要查询zk上该服务所在的host信息，而不再是从配置文件读取信息
+    ZkClient zkCli;
+    zkCli.Start();
+
+    // /UserServiceRpc/Login
+    std::string method_path = "/" + service_name + "/" + method_name;
+    // 127.0.0.1:8000
+    std::string host_data = zkCli.GetData(method_path.c_str());
+    if (host_data == "") {
+        controller -> SetFailed(method_path + " is not exist!");
+        return;
+    }
+    int idx = host_data.find(":");
+    if (idx == -1) {
+        controller -> SetFailed(method_path + "  address is invalid!");
+        return;
+    }
+    std::string ip = host_data.substr(0, idx);
+    uint16_t port = atoi(host_data.substr(idx + 1, host_data.size() - idx).c_str());
 
     struct sockaddr_in server_addr;
     server_addr.sin_family = AF_INET;
@@ -82,7 +103,6 @@ void RocketRpcChannel::CallMethod(const google::protobuf::MethodDescriptor* meth
     server_addr.sin_addr.s_addr = inet_addr(ip.c_str());
 
     // 连接rpc服务节点 点对点直连 
-    // TODO： zookeeper服务中心发现一下节点
     if (-1 == connect(clientFd, (struct sockaddr*)&server_addr, sizeof(server_addr))) {
         close(clientFd);
         char errText[512] = {0};

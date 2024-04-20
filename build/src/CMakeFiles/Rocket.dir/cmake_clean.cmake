@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Rocket.dir/RocketConfig.cc.o"
   "CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o"
   "CMakeFiles/Rocket.dir/RocketRpcController.cc.o"
-  "CMakeFiles/Rocket.dir/RpcProvider.cc.o"
+  "CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o"
   "CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o"
   "CMakeFiles/Rocket.dir/rpcheader.pb.cc.o"
 )

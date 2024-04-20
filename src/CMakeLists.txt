@@ -2,11 +2,11 @@
 set(SRC_LIST 
             RocketApplication.cc 
             RocketConfig.cc 
-            RpcProvider.cc 
+            RocketRpcProvider.cc 
             rpcheader.pb.cc 
             RocketRpcChannel.cc 
             RocketRpcController.cc
             Logger.cc
             ZookeeperUtil.cc)
 add_library(Rocket ${SRC_LIST})
-target_link_libraries(Rocket muduo_net muduo_base pthread zookeeper_mt)
+target_link_libraries(Rocket muduo_net muduo_base pthread /usr/local/lib/libzookeeper_mt.a)

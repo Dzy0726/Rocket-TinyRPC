@@ -11,8 +11,8 @@
 },
 {
   "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
-  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc",
-  "file": "/home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc"
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc"
 },
 {
   "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",

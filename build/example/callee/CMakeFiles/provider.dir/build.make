@@ -95,6 +95,7 @@ provider_EXTERNAL_OBJECTS =
 ../bin/provider: example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o
 ../bin/provider: example/callee/CMakeFiles/provider.dir/build.make
 ../bin/provider: ../lib/libRocket.a
+../bin/provider: /usr/local/lib/libzookeeper_mt.a
 ../bin/provider: example/callee/CMakeFiles/provider.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/provider"
 	cd /home/ubuntu/Rocket-TinyRPC/build/example/callee && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/provider.dir/link.txt --verbose=$(VERBOSE)

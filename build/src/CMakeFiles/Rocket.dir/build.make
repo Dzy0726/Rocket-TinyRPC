@@ -83,18 +83,18 @@ src/CMakeFiles/Rocket.dir/RocketConfig.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketConfig.cc.s"
 	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketConfig.cc -o CMakeFiles/Rocket.dir/RocketConfig.cc.s
 
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: src/CMakeFiles/Rocket.dir/flags.make
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/RpcProvider.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Rocket.dir/RpcProvider.cc.o"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: src/CMakeFiles/Rocket.dir/flags.make
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/RocketRpcProvider.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc
 
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RpcProvider.cc.i"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc > CMakeFiles/Rocket.dir/RpcProvider.cc.i
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc > CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i
 
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RpcProvider.cc.s"
-	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RpcProvider.cc -o CMakeFiles/Rocket.dir/RpcProvider.cc.s
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s"
+	cd /home/ubuntu/Rocket-TinyRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Rocket-TinyRPC/src/RocketRpcProvider.cc -o CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s
 
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o: src/CMakeFiles/Rocket.dir/flags.make
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc
@@ -165,7 +165,7 @@ src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.s: cmake_force
 Rocket_OBJECTS = \
 "CMakeFiles/Rocket.dir/RocketApplication.cc.o" \
 "CMakeFiles/Rocket.dir/RocketConfig.cc.o" \
-"CMakeFiles/Rocket.dir/RpcProvider.cc.o" \
+"CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o" \
 "CMakeFiles/Rocket.dir/rpcheader.pb.cc.o" \
 "CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o" \
 "CMakeFiles/Rocket.dir/RocketRpcController.cc.o" \
@@ -177,7 +177,7 @@ Rocket_EXTERNAL_OBJECTS =
 
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketApplication.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketConfig.cc.o
-../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RpcProvider.cc.o
+../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o
 ../lib/libRocket.a: src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o

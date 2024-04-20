@@ -25,21 +25,33 @@ src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/include/RocketApplicatio
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/include/RocketConfig.h
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/include/RocketRpcChannel.h
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/include/RocketRpcController.h
+src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/include/ZooKeeperUtil.h
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/include/rpcheader.pb.h
 src/CMakeFiles/Rocket.dir/RocketRpcChannel.cc.o: ../src/RocketRpcChannel.cc
 
 src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o: ../src/include/RocketRpcController.h
 src/CMakeFiles/Rocket.dir/RocketRpcController.cc.o: ../src/RocketRpcController.cc
 
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/LockQueue.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/Logger.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/RocketApplication.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/RocketConfig.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/RocketRpcChannel.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/RocketRpcController.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/RpcProvider.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/include/rpcheader.pb.h
-src/CMakeFiles/Rocket.dir/RpcProvider.cc.o: ../src/RpcProvider.cc
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/LockQueue.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/Logger.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/RocketApplication.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/RocketConfig.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/RocketRpcChannel.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/RocketRpcController.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/RocketRpcProvider.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/ZooKeeperUtil.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/include/rpcheader.pb.h
+src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o: ../src/RocketRpcProvider.cc
+
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/LockQueue.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/Logger.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/RocketApplication.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/RocketConfig.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/RocketRpcChannel.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/RocketRpcController.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/ZooKeeperUtil.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/include/rpcheader.pb.h
+src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o: ../src/ZookeeperUtil.cc
 
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o: ../src/include/rpcheader.pb.h
 src/CMakeFiles/Rocket.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc

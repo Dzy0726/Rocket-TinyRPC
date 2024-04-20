@@ -114,7 +114,7 @@ google/protobuf/service.h
 string
 -
 
-../src/include/RpcProvider.h
+../src/include/RocketRpcProvider.h
 google/protobuf/service.h
 ../src/include/google/protobuf/service.h
 muduo/net/TcpServer.h
@@ -185,8 +185,8 @@ friend.pb.h
 /home/ubuntu/Rocket-TinyRPC/example/callee/friend.pb.h
 RocketApplication.h
 /home/ubuntu/Rocket-TinyRPC/example/callee/RocketApplication.h
-RpcProvider.h
-/home/ubuntu/Rocket-TinyRPC/example/callee/RpcProvider.h
+RocketRpcProvider.h
+/home/ubuntu/Rocket-TinyRPC/example/callee/RocketRpcProvider.h
 Logger.h
 /home/ubuntu/Rocket-TinyRPC/example/callee/Logger.h
 

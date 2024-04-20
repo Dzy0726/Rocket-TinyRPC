@@ -28,7 +28,7 @@ Logger::Logger() {
             std::string msg = m_queue.pop();
 
             char time_buf[128] = {0};
-            sprintf(time_buf, "%d-%d-%d => [%s] ", 
+            sprintf(time_buf, "%d:%d:%d => [%s] ", 
                     nowTM -> tm_hour, 
                     nowTM -> tm_min, 
                     nowTM -> tm_sec,

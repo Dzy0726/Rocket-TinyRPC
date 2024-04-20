@@ -260,32 +260,32 @@ RocketRpcController.cc.s:
 	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcController.cc.s
 .PHONY : RocketRpcController.cc.s
 
-RpcProvider.o: RpcProvider.cc.o
+RocketRpcProvider.o: RocketRpcProvider.cc.o
 
-.PHONY : RpcProvider.o
+.PHONY : RocketRpcProvider.o
 
 # target to build an object file
-RpcProvider.cc.o:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RpcProvider.cc.o
-.PHONY : RpcProvider.cc.o
+RocketRpcProvider.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.o
+.PHONY : RocketRpcProvider.cc.o
 
-RpcProvider.i: RpcProvider.cc.i
+RocketRpcProvider.i: RocketRpcProvider.cc.i
 
-.PHONY : RpcProvider.i
+.PHONY : RocketRpcProvider.i
 
 # target to preprocess a source file
-RpcProvider.cc.i:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RpcProvider.cc.i
-.PHONY : RpcProvider.cc.i
+RocketRpcProvider.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.i
+.PHONY : RocketRpcProvider.cc.i
 
-RpcProvider.s: RpcProvider.cc.s
+RocketRpcProvider.s: RocketRpcProvider.cc.s
 
-.PHONY : RpcProvider.s
+.PHONY : RocketRpcProvider.s
 
 # target to generate assembly for a file
-RpcProvider.cc.s:
-	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RpcProvider.cc.s
-.PHONY : RpcProvider.cc.s
+RocketRpcProvider.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RocketRpcProvider.cc.s
+.PHONY : RocketRpcProvider.cc.s
 
 ZookeeperUtil.o: ZookeeperUtil.cc.o
 
@@ -365,9 +365,9 @@ help:
 	@echo "... RocketRpcController.o"
 	@echo "... RocketRpcController.i"
 	@echo "... RocketRpcController.s"
-	@echo "... RpcProvider.o"
-	@echo "... RpcProvider.i"
-	@echo "... RpcProvider.s"
+	@echo "... RocketRpcProvider.o"
+	@echo "... RocketRpcProvider.i"
+	@echo "... RocketRpcProvider.s"
 	@echo "... ZookeeperUtil.o"
 	@echo "... ZookeeperUtil.i"
 	@echo "... ZookeeperUtil.s"

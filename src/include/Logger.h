@@ -37,6 +37,8 @@ private:
         logger.Log(c); \
     } while(0); 
 
+
+
 #define LOG_ERROR(logmsgFormat, ...) \
     do \
     { \
@@ -46,3 +48,4 @@ private:
         snprintf(c, 1024, logmsgFormat, ##__VA_ARGS__); \
         logger.Log(c); \
     } while(0); 
+

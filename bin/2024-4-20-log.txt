@@ -25,4 +25,74 @@
 1-30-36 => [INFO] Header Size: 33
 1-30-36 => [INFO] RPC Header String: 
 FriendServiceRpcGetFriendList
-1-30-36 => [INFO] P¸§\­U
+1-30-36 => [INFO] P¸§\­U14-18-48 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+14-18-48 => [INFO] RPC SERVER IP: 127.0.0.1
+14-18-48 => [INFO] RPC SERVER PROT: 8000
+14-18-48 => [INFO] ZOOKEEPER IP: 127.0.0.1
+14-18-48 => [INFO] ZOOKEEPER PORT: 2181
+14-18-48 => [INFO] =================================================
+14-18-48 => [INFO] Service Name: FriendServiceRpc
+14-18-48 => [INFO] Method Name: GetFriendList
+14-18-48 => [INFO] Zookeeper Init Success
+14-18-48 => [INFO] ZNode Create Success... PATH: /FriendServiceRpc
+14-18-48 => [INFO] ZNode Create Success... PATH: /FriendServiceRpc/GetFriendList
+14-18-48 => [INFO] RPCProvider start service at ip: 127.0.0.1, port: 8000
+14-38-23 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+14-38-23 => [INFO] RPC SERVER IP: 127.0.0.1
+14-38-23 => [INFO] RPC SERVER PROT: 8000
+14-38-23 => [INFO] ZOOKEEPER IP: 127.0.0.1
+14-38-23 => [INFO] ZOOKEEPER PORT: 2181
+14-38-23 => [INFO] =================================================
+14-38-55 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+14-38-55 => [INFO] RPC SERVER IP: 127.0.0.1
+14-38-55 => [INFO] RPC SERVER PROT: 8000
+14-38-55 => [INFO] ZOOKEEPER IP: 127.0.0.1
+14-38-55 => [INFO] ZOOKEEPER PORT: 2181
+14-38-55 => [INFO] =================================================
+14-38-55 => [INFO] ============ INFO ABOUT RPC METHODS ==============
+14-38-55 => [INFO] Header Size: 33
+14-38-55 => [INFO] RPC Header String: 
+FriendServiceRpcGetFriendList
+14-38-55 => [INFO] Service Name: FriendServiceRpc
+14-38-55 => [INFO] Method Name: GetFriendList
+14-38-55 => [INFO] Args String: 
+14-38-55 => [INFO] =================================================
+14-38-55 => [INFO] Zookeeper Init Success
+14-42-50 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+14-42-50 => [INFO] RPC SERVER IP: 127.0.0.1
+14-42-50 => [INFO] RPC SERVER PROT: 8000
+14-42-50 => [INFO] ZOOKEEPER IP: 127.0.0.1
+14-42-50 => [INFO] ZOOKEEPER PORT: 2181
+14-42-50 => [INFO] =================================================
+14-42-50 => [INFO] Service Name: FriendServiceRpc
+14-42-50 => [INFO] Method Name: GetFriendList
+14-43-1 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+14-43-1 => [INFO] RPC SERVER IP: 127.0.0.1
+14-43-1 => [INFO] RPC SERVER PROT: 8000
+14-43-1 => [INFO] ZOOKEEPER IP: 127.0.0.1
+14-43-1 => [INFO] ZOOKEEPER PORT: 2181
+14-43-1 => [INFO] =================================================
+14-43-1 => [INFO] ======= INFO ABOUT RPC METHODS(Consumer)=========
+14-43-1 => [INFO] Header Size: 33
+14-43-1 => [INFO] RPC Header String: 
+FriendServiceRpcGetFriendList
+14-43-1 => [INFO] Service Name: FriendServiceRpc
+14-43-1 => [INFO] Method Name: GetFriendList
+14-43-1 => [INFO] Args String: 
+14-43-1 => [INFO] =================================================
+14-44-30 => [INFO] ============ INFO ABOUT RPC CONFIG ==============
+14-44-30 => [INFO] RPC SERVER IP: 127.0.0.1
+14-44-30 => [INFO] RPC SERVER PROT: 8000
+14-44-30 => [INFO] ZOOKEEPER IP: 127.0.0.1
+14-44-30 => [INFO] ZOOKEEPER PORT: 2181
+14-44-30 => [INFO] =================================================
+14-44-30 => [INFO] Service Name: FriendServiceRpc
+14-44-30 => [INFO] Method Name: GetFriendList
+14:46:40 => [INFO] ====== INFO ABOUT RPC METHODS(Application)========
+14:46:40 => [INFO] RPC SERVER IP: 127.0.0.1
+14:46:40 => [INFO] RPC SERVER PROT: 8000
+14:46:40 => [INFO] ZOOKEEPER IP: 127.0.0.1
+14:46:40 => [INFO] ZOOKEEPER PORT: 2181
+14:46:40 => [INFO] =================================================
+14:46:40 => [INFO] Service Name: FriendServiceRpc
+14:46:40 => [INFO] Method Name: GetFriendList
