@@ -35,6 +35,11 @@
   "file": "/home/ubuntu/Rocket-TinyRPC/src/Logger.cc"
 },
 {
+  "directory": "/home/ubuntu/Rocket-TinyRPC/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o -c /home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc",
+  "file": "/home/ubuntu/Rocket-TinyRPC/src/ZookeeperUtil.cc"
+},
+{
   "directory": "/home/ubuntu/Rocket-TinyRPC/build/example/callee",
   "command": "/usr/bin/g++   -I/home/ubuntu/Rocket-TinyRPC/src/include -I/home/ubuntu/Rocket-TinyRPC/example  -g   -o CMakeFiles/provider.dir/FriendService.cc.o -c /home/ubuntu/Rocket-TinyRPC/example/callee/FriendService.cc",
   "file": "/home/ubuntu/Rocket-TinyRPC/example/callee/FriendService.cc"

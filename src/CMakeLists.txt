@@ -6,6 +6,7 @@ set(SRC_LIST
             rpcheader.pb.cc 
             RocketRpcChannel.cc 
             RocketRpcController.cc
-            Logger.cc)
+            Logger.cc
+            ZookeeperUtil.cc)
 add_library(Rocket ${SRC_LIST})
-target_link_libraries(Rocket muduo_net muduo_base pthread)
+target_link_libraries(Rocket muduo_net muduo_base pthread zookeeper_mt)

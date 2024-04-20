@@ -152,12 +152,12 @@ src/clean: src/CMakeFiles/Rocket.dir/clean
 src/CMakeFiles/Rocket.dir/all:
 	$(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/depend
 	$(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Rocket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target Rocket"
 .PHONY : src/CMakeFiles/Rocket.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/Rocket.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Rocket.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/Rocket.dir/rule
@@ -179,12 +179,12 @@ src/CMakeFiles/Rocket.dir/clean:
 example/callee/CMakeFiles/provider.dir/all: src/CMakeFiles/Rocket.dir/all
 	$(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/depend
 	$(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=12,13,14 "Built target provider"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=13,14,15 "Built target provider"
 .PHONY : example/callee/CMakeFiles/provider.dir/all
 
 # Build rule for subdir invocation for target.
 example/callee/CMakeFiles/provider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/provider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 0
 .PHONY : example/callee/CMakeFiles/provider.dir/rule
@@ -206,12 +206,12 @@ example/callee/CMakeFiles/provider.dir/clean:
 example/caller/CMakeFiles/consumer.dir/all: src/CMakeFiles/Rocket.dir/all
 	$(MAKE) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/depend
 	$(MAKE) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=9,10,11 "Built target consumer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Rocket-TinyRPC/build/CMakeFiles --progress-num=10,11,12 "Built target consumer"
 .PHONY : example/caller/CMakeFiles/consumer.dir/all
 
 # Build rule for subdir invocation for target.
 example/caller/CMakeFiles/consumer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 example/caller/CMakeFiles/consumer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Rocket-TinyRPC/build/CMakeFiles 0
 .PHONY : example/caller/CMakeFiles/consumer.dir/rule

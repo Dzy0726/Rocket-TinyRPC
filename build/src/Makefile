@@ -287,6 +287,33 @@ RpcProvider.cc.s:
 	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/RpcProvider.cc.s
 .PHONY : RpcProvider.cc.s
 
+ZookeeperUtil.o: ZookeeperUtil.cc.o
+
+.PHONY : ZookeeperUtil.o
+
+# target to build an object file
+ZookeeperUtil.cc.o:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.o
+.PHONY : ZookeeperUtil.cc.o
+
+ZookeeperUtil.i: ZookeeperUtil.cc.i
+
+.PHONY : ZookeeperUtil.i
+
+# target to preprocess a source file
+ZookeeperUtil.cc.i:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.i
+.PHONY : ZookeeperUtil.cc.i
+
+ZookeeperUtil.s: ZookeeperUtil.cc.s
+
+.PHONY : ZookeeperUtil.s
+
+# target to generate assembly for a file
+ZookeeperUtil.cc.s:
+	cd /home/ubuntu/Rocket-TinyRPC/build && $(MAKE) -f src/CMakeFiles/Rocket.dir/build.make src/CMakeFiles/Rocket.dir/ZookeeperUtil.cc.s
+.PHONY : ZookeeperUtil.cc.s
+
 rpcheader.pb.o: rpcheader.pb.cc.o
 
 .PHONY : rpcheader.pb.o
@@ -341,6 +368,9 @@ help:
 	@echo "... RpcProvider.o"
 	@echo "... RpcProvider.i"
 	@echo "... RpcProvider.s"
+	@echo "... ZookeeperUtil.o"
+	@echo "... ZookeeperUtil.i"
+	@echo "... ZookeeperUtil.s"
 	@echo "... rpcheader.pb.o"
 	@echo "... rpcheader.pb.i"
 	@echo "... rpcheader.pb.s"
